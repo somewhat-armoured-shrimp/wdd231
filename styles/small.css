@@ -1,0 +1,178 @@
+:root {
+    --primary: #0e0d1d;
+    --secondary: #db5b5b;
+
+    --border: 1px solid var(--secondary);
+}
+
+body {
+    margin: 0;
+    color: white;
+    background: var(--primary);
+    font-weight: 400;
+    font-family: 'Courier Prime';
+}
+
+.non-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: var(--border);
+}
+
+.open.non-nav {
+    border: none;
+}
+
+#pfp {
+    border-radius: 50%;
+    margin: 2rem;
+    border: 4px solid var(--secondary);
+}
+
+header span {
+    font-size: x-large;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    color: white;
+    font-size: 50px;
+}
+
+#menu::before {
+    font-family: 'Courier Prime';
+    content: '≡';
+    color: var(--secondary);
+}
+
+.open#menu::before {
+    content: '×';
+}
+
+.navigation {
+    display: none;
+}
+
+/* golly dude idk man 😭*/
+.navigation a {
+    display: flex;
+    justify-content: center;
+    width: 84%;
+    padding: 1.8rem;
+    color: var(--secondary);
+    text-decoration: none;
+
+    border-bottom: var(--border);
+    align-self: center;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    color: cyan;
+    border-bottom: 1px solid cyan;
+}
+
+.open.navigation {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-self: center;
+    background: var(--primary);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h2,
+span {
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+section h2 {
+    border-bottom: var(--border);
+    width: 80%;
+    padding-bottom: 5px;
+}
+
+#course-work ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    /* lists are such a bruh moment */
+}
+
+#course-work li {
+    font-size: large;
+    margin-left: -1.5rem;
+    margin-bottom: 1rem;
+    text-align: start;
+    
+}
+
+#pic img {
+    margin: 1rem;
+    border-radius: 5px;
+    border: var(--border);
+    width: 300px;
+    height: auto;
+}
+
+#pic p {
+    margin-top: -0.5rem;
+}
+
+.filter {
+    font-family: 'Courier Prime';
+    width: 120px;
+    color: white;
+    font-size: 16px;
+    border: var(--border);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.filter:hover {
+    border: 1px solid cyan;
+}
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.course {
+    background: #db5b5b;
+    margin: 0.5rem;
+    padding: 1rem;
+    align-self: center;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--primary);
+    font-size: larger;
+}
+
+footer {
+    background: var(--primary);
+    text-align: center;
+    color: var(--secondary);
+    border-top: var(--border);
+    padding-bottom: 1rem;
+    margin-top: 2.5rem;
+    font-size: 15px;
+}

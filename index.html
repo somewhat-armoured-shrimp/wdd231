@@ -5,10 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231</title>
+    <meta name="description" content="I don't know yet">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/courses.js"></script>
 </head>
 
 <body>
-    <h1>goodness gracious !!</h1>
+    <header>
+        <div class="non-nav">
+            <img id="pfp" src="images/ahh-profile.webp" alt="very not-real drawing of me with thick black lineart and dot eyes." width="100">
+            <span>Sarah Toronto</span>
+            <button id="menu"></button>
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Chamber</a>
+            <a href="https://github.com/somewhat-armoured-shrimp">GitHub</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section id="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li>???</li>
+                <li>???</li>
+                <li>???</li>
+            </ul>
+        </section>
+        <section id="pic">
+            <h2>Seattle, WA</h2>
+            <img src="images/seattle-probably.jpg" alt="probaly seattle at night" width="499" height="332">
+            <p>Average Summer Afternoon</p>
+        </section>
+        <section id="course-and-button">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div>
+                <button class="filter" id="all">All</button>
+                <button class="filter" id="cse">CSE</button>
+                <button class="filter" id="wdd">WDD</button>
+            </div>
+            <div id="courses"></div>
+            <!-- 
+            <p class="course">CSE 110</p>
+            <p class="course">CSE 111</p>
+            <p class="course">WDD 130</p>
+            <p class="course">WDD 131</p>
+            <p class="course">CSE 210</p>
+            <p class="course">WDD 231</p> -->
+            <p>Number of Credits: <span id="credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> 🦐 Sarah Toronto 🦐 Washington</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
