@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "danky's cat tossing =^w^=",
+            "tagline": "meow! :3",
+            "address": "660 Beef Rd, Cambridge CB2 6SS, United Kingdom",
+            "phone": "01223 333333",
+            "siteURL": "https://dankycattossing.org.uk",
+            "icon": "images/dankylogo.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "The Gamer Gate",
+            "tagline": "Game on!",
+            "address": "69 Epic St, Cambridge CB2 7GG, United Kingdom",
+            "phone": "01223 696969",
+            "siteURL": "https://www.thegamergate.com",
+            "icon": "images/gamergatelogo.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Household Man Roleplay Help Center",
+            "tagline": "Eheheheheh!",
+            "address": "23 Stupid St, Cambridge CB1 9HE, United Kingdom",
+            "phone": "01223 111111",
+            "siteURL": "https://www.familyguyhelp.gov.uk",
+            "icon": "images/householdmanlogo.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Bannibal Beef",
+            "tagline": "Criminally Good.",
+            "address": "666 Beef St, Cambridge CB2 6SS, United Kingdom",
+            "phone": "01223 666666",
+            "siteURL": "https://www.bannibalbeef.co.uk",
+            "icon": "images/bannibalbeeflogo.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Traitor Joseph's",
+            "tagline": "Imported American Goods",
+            "address": "1 Ripoff Rd, Cambridge CB1 1SS, United Kingdom",
+            "phone": "01223 222222",
+            "siteURL": "https://traitorjosephs.co.uk",
+            "icon": "images/traitorjoeslogo.png",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "Brick's Bricks",
+            "tagline": "Construct a house to cook yourself in!",
+            "address": "8 Boring Rd, Cambridge CB1 8BB, United Kingdom",
+            "phone": "01223 888888",
+            "siteURL": "https://bricksbricks.com",
+            "icon": "images/brickslogo.png",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "Happy 24/7",
+            "tagline": "Self destruction.",
+            "address": "777 Silly St, Cambridge CB2 1WE, United Kingdom",
+            "phone": "01223 777777",
+            "siteURL": "https://www.happyhoureveryhour.org.uk",
+            "icon": "images/happylogo.png",
+            "membershipLevel": "Silver"
+        }
+    ]
+}
