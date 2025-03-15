@@ -10,6 +10,15 @@
             "membershipLevel": "Silver"
         },
         {
+            "name": "Ice Cattle",
+            "tagline": "WE'LL MAKE IT HAPPEN",
+            "address": "106 Yoia Rd, Cambridge CB1 5VY, United Kingdom",
+            "phone": "01223 111612",
+            "siteURL": "https://icecattle.co.uk",
+            "icon": "images/icecattlelogo.png",
+            "membershipLevel": "Gold"
+        },
+        {
             "name": "The Gamer Gate",
             "tagline": "Game on!",
             "address": "69 Epic St, Cambridge CB2 7GG, United Kingdom",
@@ -37,6 +46,15 @@
             "membershipLevel": "Gold"
         },
         {
+            "name": "THE Anime Club",
+            "tagline": "Uwaaah! (*/ω＼*)",
+            "address": "671 Beef St, Cambridge CB2 6SS, United Kingdom",
+            "phone": "01223 838383",
+            "siteURL": "https://thing/bruhmoment.html",
+            "icon": "images/animeclublogo.png",
+            "membershipLevel": "Silver"
+        },
+        {
             "name": "Traitor Joseph's",
             "tagline": "Imported American Goods",
             "address": "1 Ripoff Rd, Cambridge CB1 1SS, United Kingdom",
@@ -61,7 +79,7 @@
             "phone": "01223 777777",
             "siteURL": "https://happyhoureveryhour.org.uk",
             "icon": "images/happylogo.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Member"
         }
     ]
 }
