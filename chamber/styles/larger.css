@@ -1,0 +1,80 @@
+@media (min-width: 850px) {
+    /* //////////////////////////////////////////////////////////////
+    GENERAL
+    ////////////////////////////////////////////////////////////// */
+
+    header {
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        grid-template-rows: 1fr;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2 / 3;
+    }
+
+    .navigation li a {
+        padding-top: 2rem;
+        box-sizing: border-box;
+        width: 15vw;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    }
+
+    #foot1 {
+        grid-column: 2 / 3;
+        border: none;
+    }
+
+    #foot2 {
+        grid-column: 4 / 5;
+        margin-top: 2rem;
+    }
+
+    /* //////////////////////////////////////////////////////////////
+    Directory
+    ////////////////////////////////////////////////////////////// */
+
+    .directory {
+        display: grid;
+        grid-template-columns: 1fr 9fr 1fr;
+    }
+
+    .layout-options {
+        margin-bottom: -3rem;
+        grid-column: 2 / 3;
+    }
+
+    .cards {
+        grid-column: 2 / 3;
+        margin: 3rem 0;
+    }
+    
+    .list .member-card {
+        display: grid;
+        grid-template-columns: 14% 25% 1fr 1fr 250px;
+        column-gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .list .member-card h2~p,
+    .list .member-card a {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+}
