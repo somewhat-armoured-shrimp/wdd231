@@ -128,7 +128,7 @@ const displayRandomSpotlight = (companies) => {
     const displayedMembers = [];
     displayedMembers.push(topMembers[0]);
     displayedMembers.push(topMembers[1]);
-    displayedMembers.push(topMembers[2]);
+    // displayedMembers.push(topMembers[2]);
 
     // for each of those displayed members, make this card.
     displayedMembers.forEach(member => {
@@ -141,9 +141,16 @@ const displayRandomSpotlight = (companies) => {
         const address = document.createElement('p');
         const phone = document.createElement('p');
         const siteLink = document.createElement('a');
+        let membershipLevel = member.membershipLevel;
+
+        if (member.membershipLevel === 'Gold') {
+            membershipLevel = '🥇';
+        } else if (member.membershipLevel === 'Silver') {
+            membershipLevel = '🥈';
+        }
 
         memberName.textContent = `${member.name}`;
-        tagline.textContent = `${member.tagline}`;
+        tagline.textContent = `${member.tagline} ${membershipLevel}`;
         companyLogo.textContent = `${member.icon}`;
         address.textContent = `ADDRESS: ${member.address}`;
         phone.textContent = `PHONE: ${member.phone}`;

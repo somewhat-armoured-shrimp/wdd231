@@ -152,12 +152,12 @@
 
     .spotCard {
         display: block;
-        width: 290px;
+        width: 50%;
         margin: 2rem 0;
     }
 
     .spotCard img {
-        width: 100px;
+        width: 100%;
     }
 
 }
