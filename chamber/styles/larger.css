@@ -1,4 +1,4 @@
-@media (min-width: 850px) {
+@media (min-width: 800px) {
     /* //////////////////////////////////////////////////////////////
     GENERAL
     ////////////////////////////////////////////////////////////// */
@@ -28,6 +28,11 @@
         box-sizing: border-box;
         width: 15vw;
     }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 9fr 1fr;
+    }
 
     footer {
         display: grid;
@@ -48,10 +53,7 @@
     Directory
     ////////////////////////////////////////////////////////////// */
 
-    .directory {
-        display: grid;
-        grid-template-columns: 1fr 9fr 1fr;
-    }
+    
 
     .layout-options {
         margin-bottom: -3rem;
@@ -77,4 +79,85 @@
         justify-content: center;
         padding-top: 1rem;
     }
+
+    /* //////////////////////////////////////////////////////////////
+    Home
+    ////////////////////////////////////////////////////////////// */
+
+    .hero {
+        display: flex;
+        grid-column: 1 / 4;
+        margin: 0 3.4rem;
+        
+    }
+    /* dude i dont want to deal with webps and paint and programs and whatever
+        anymore you're GETTING A SKINNY HERO IMAGE */
+    .hero img {
+        width: 70%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .callToAction {
+        flex-wrap: wrap;
+        width: 30%;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .callToAction a {
+        margin: 0;
+        padding: 1.75rem 3rem;
+        font-size: xx-large;
+        width: 40%;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr;
+        grid-column: 2 / 3;
+    }
+
+    .currentEvents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather,
+    #forecast {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #temperature:first-child {
+        margin-bottom: 1rem;
+    }
+
+    #forecast p {
+        margin-top: -0.5rem;
+    }
+
+    .spotlight {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 1 / 4;
+        justify-content: space-around;
+    }
+
+    .spotCard {
+        display: block;
+        width: 290px;
+        margin: 2rem 0;
+    }
+
+    .spotCard img {
+        width: 100px;
+    }
+
 }

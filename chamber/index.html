@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cambridge Chamber of Commerce</title>
+    <meta name="description" content="Come and see please please please please??">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script defer src="scripts/headFoot.js"></script>
+    <script defer src="scripts/home.js"></script>
+    <meta property="og:title" content="Welcome to the Cambridge Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://somewhat-armoured-shrimp.github.io/wdd231/chamber/images/cambridge-meta-pic.jpg">
+    <meta property="og:url" content="https://somewhat-armoured-shrimp.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/favicon(3).ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo-h1">
+            <img src="images/cat.gif" alt="actual placeholder cat this time most likely" width="80" height="80">
+            <h1>Cambridge <span>Chamber of Commerce</span></h1>
+        </div>
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <div class="hero">
+            <img src="images/hero.webp"
+                alt="Nice big old image of King's College and surrounding area at almost-sunset I think" width="735"
+                height="307">
+            <div class="callToAction">
+                <p>Become a Member!</p>
+                <a href="join.html">Join</a>
+            </div>
+        </div>
+        <div class="content">
+            <section class="currentEvents">
+                <h2>Events</h2>
+                <div>
+                    <h3>The Gamer Gate - HUGE Household Man Roleplay in Roblox 🎮</h3>
+                    <h4><span>Ongoing</span> - Open Mondays, Tuesdays, and Thursdays from 16:00 - 21:00</h4>
+    
+                </div>
+                <div>
+                    <h3>Ice Cattle - Spectacle</h3>
+                    <h4><span>Ongoing</span> - Open all the time. GET A ROOM</h4>
+                        <p>Two weirdos keep hogging the rink. Please make them uncomfortable so they leave. xx</p>
+                </div>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <div>
+                    <img id="weather-emoji" src="#" alt="#">
+                    <div>
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+            </section>
+            <section id="forecast">
+                <h2>3 Day Forecast</h2>
+            
+            </section>
+            <section class="spotlight">
+                <h2>Spotlights</h2>
+                <!-- reference skeleton
+                <div class="spotCard">
+                    <div class="spotHeader">
+                        <h2>Household Man Roleplay Help Centre</h2>
+                        <span>Construct a house to cook yourself in!</span>
+                    </div>
+                    <div class="spotContent">
+                        <img src="images/householdmanlogo.png" alt="family guy" width="200">
+                        <p>ADDRESS: 23 Stupid St, Cambridge CB2 6SS, United Kingdom</p>
+                        <p>PHONE: 00000 000000</p>
+                        <a href="https://happyhoureveryhour.org.uk">https://happyhoureveryhour.org.uk</a>
+                    </div>
+                </div> -->
+            </section>
+        </div>
+    </main>
+    <footer>
+        <!-- copying wireframe thing for thing because why not -->
+        <div id="foot1">
+            <p>Cambridge Chamber of Commmerce</p>
+            <p>1 Innaminnutbrough Street</p>
+            <p>Cambridge</p>
+            <p>CB1 4AH</p>
+            <p>United Kingdom</p>
+            <p>cccambridge@yahoo.com</p>
+            <p>01223 999999</p>
+        </div>
+        <div id="foot2">
+            <p>WDD 231 Class Project</p>
+            <p>Sarah Toronto</p>
+            <p>©<span id="currentYear"></span> Cambridge Chamber of Commerce</p>
+            <p>Last modified - <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
