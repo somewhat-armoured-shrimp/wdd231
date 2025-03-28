@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Cambridge Chamber of Commerce</title>
+    <meta name="description" content="Come and join us please please please please please??">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script defer src="scripts/headFoot.js"></script>
+    <script defer src="scripts/join.js"></script>
+    <meta property="og:title" content="Join Very Real Cambridge Businesses">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://somewhat-armoured-shrimp.github.io/wdd231/chamber/images/cambridge-meta-pic.jpg">
+    <meta property="og:url" content="https://somewhat-armoured-shrimp.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="images/favicon(3).ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo-h1">
+            <img src="images/cat.gif" alt="not a placeholder cat" width="80" height="80">
+            <h1>Cambridge <span>Chamber of Commerce</span></h1>
+        </div>
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join">
+        <div class="formbox">
+            <h2>Join us we're awesome</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label>First Name *<input type="text" id="firstname" name="firstname" autocomplete="given-name"
+                            required></label>
+                    <label>Last Name *<input type="text" id="lastname" name="lastname" autocomplete="family-name"
+                            required></label>
+                    <label>Title or position within your organisation:<input type="text" id="title" name="title"
+                            pattern="[a-zA-z\s\-]{7,}" title="Use at least 7 characters. Hyphens and spaces allowed"
+                            autocomplete="organization-title"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label>E-mail *<input type="email" id="email" name="email" placeholder="placeholder@gmail.com"
+                            autocomplete="email" required></label>
+                    <label>Phone Number *<input type="tel" id="phone" name="phone" autocomplete="tel"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Info</legend>
+                    <label>Business/Organisation Name *<input type="text" id="business" name="business"
+                            required></label>
+                    <p>Choose a Membership Level *</p>
+                    <div class="radiobox">
+                        <label for="nonprofit">🖤 Nonprofit Membership</label>
+                        <input type="radio" name="member-level" value="np-membership" id="nonprofit" required>
+                    </div>
+                    <div class="radiobox">
+                        <label for="bronze">🥉 Bronze Membership</label>
+                        <input type="radio" name="member-level" value="bronze-membership" id="bronze">
+                    </div>
+                    <div class="radiobox">
+                        <label for="silver">🥈 Silver Membership</label>
+                        <input type="radio" name="member-level" value="silver-membership" id="silver">
+                    </div>
+                    <div class="radiobox">
+                        <label for="gold">🥇 Gold Membership</label>
+                        <input type="radio" name="member-level" value="gold-membership" id="gold">
+                    </div>
+
+                    <label>Describe your business/organisation:<textarea name="org-desc" id="org-desc"
+                            rows="5"></textarea></label>
+                    <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                    <input type="submit" value="Join">
+                </fieldset>
+            </form>
+        </div>
+        <div class="perks-box">
+            <h2>Membership Perks</h2>
+            <div id="nonprofit-box">
+                <h3>Nonprofit Membership Perks</h3>
+                <!-- <p class="perk-emojis">🖤</p> -->
+                <button id="nonprofitMore">Learn More</button>
+            </div>
+            <div id="bronze-box">
+                <h3>Bronze Membership Perks</h3>
+                <!-- <p class="perk-emojis">🥉</p> -->
+                <button id="bronzeMore">Learn More</button>
+            </div>
+            <div id="silver-box">
+                <h3>Silver Membership Perks</h3>
+                <!-- <p class="perk-emojis">🥈</p> -->
+                <button id="silverMore">Learn More</button>
+            </div>
+            <div id="gold-box">
+                <h3>Gold Membership Perks</h3>
+                <!-- <p class="perk-emojis">🥇</p> -->
+                <button id="goldMore">Learn More</button>
+            </div>
+
+            <dialog id="perk-desc">
+                <div></div>
+                <button id="close-button">×</button>
+            </dialog>
+        </div>
+    </main>
+    <footer>
+        <!-- copying wireframe thing for thing because why not -->
+        <div id="foot1">
+            <p>Cambridge Chamber of Commmerce</p>
+            <p>1 Innaminnutbrough Street</p>
+            <p>Cambridge</p>
+            <p>CB1 4AH</p>
+            <p>United Kingdom</p>
+            <p>cccambridge@yahoo.com</p>
+            <p>01223 999999</p>
+        </div>
+        <div id="foot2">
+            <p>WDD 231 Class Project</p>
+            <p>Sarah Toronto</p>
+            <p>©<span id="currentYear"></span> Cambridge Chamber of Commerce</p>
+            <p>Last modified - <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

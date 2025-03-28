@@ -160,4 +160,31 @@
         width: 100%;
     }
 
+    /* //////////////////////////////////////////////////////////////
+    Join
+    ////////////////////////////////////////////////////////////// */
+
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 5fr 4fr 1fr;
+    }
+
+    .formbox {
+        grid-column: 2 / 3;
+    }
+
+    .perks-box {
+        margin-top: 1rem;
+    }
+
+    .perks-box > div {
+        padding: 1.5rem 3rem;
+    }
+    .perks-box >div > * {
+        margin: 0.5rem;
+    }
+
+    #perk-desc > div {
+        margin: 5%;
+    }
 }

@@ -6,12 +6,18 @@
     
     --header-font: 'Poiret One';
     --normal-font: 'Didact Gothic';
+
+    --border: 1px solid var(--accent);
     
 }
 
 body {
     color: var(--primary);
     background: var(--body);
+}
+::selection {
+    background-color: #007d83;
+    color: #fff;
 }
 
 header {
@@ -139,12 +145,11 @@ Directory
     width: 100px;
     font-family: var(--normal-font);
     font-size: medium;
-    transition: 0.2s;
+    transition: 0.1s ease-in;
 }
 
 .layout-options button:hover {
     background: var(--secondary);
-    transition: 0.2s;
 }
 
 .cards {
@@ -303,7 +308,7 @@ Home
 /* weather /////////////////////////////////////////////// */
 .weather,
 #forecast {
-    border: 1px solid var(--accent);
+    border: var(--border);
     margin: 0.7rem;
     padding: 1rem;
     border-radius: 15px;
@@ -311,7 +316,7 @@ Home
 .weather h2,
 #forecast h2 {
     margin-top: 0;
-    border-bottom: 1px solid var(--accent);
+    border-bottom: var(--border);
 }
 
 .weather div {
@@ -372,13 +377,11 @@ Home
 
 .spotCard {
     margin: 4rem 0;
-    /* border: 1px solid var(--accent);
-    border-radius: 15px; */
 }
 
 .spotHeader {
     font-size: smaller;
-    border-bottom: 1px solid var(--accent);
+    border-bottom: var(--border);
     text-align: center;
     margin: 0 0.5rem;
 }
@@ -406,3 +409,248 @@ Home
     margin-left: 10px;
     grid-column: 2 / 3;
 }
+
+/* //////////////////////////////////////////////////////////////
+
+Join
+
+////////////////////////////////////////////////////////////// */
+
+.join {
+    color: #000;
+    font-family: var(--normal-font);
+}
+
+.formbox {
+    margin: 1rem;
+}
+
+.formbox > h2 {
+    font-family: var(--header-font);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: var(--border);
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0.5rem 1.5rem;
+    border: var(--border);
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+input {
+    padding: 0.9rem;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.radiobox {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 2rem;
+    font-size: 15px;
+}
+
+.radiobox label {
+    width: 100%;
+}
+
+textarea {
+    padding: 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    margin: 5px;
+    font-family: var(--normal-font);
+    font-size: 16px;
+}
+
+input[type='submit'] {
+    border: none;
+    background: var(--primary);
+    color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    font-size: larger;
+}
+
+input[type='submit']:hover,
+input[type='submit']:focus {
+    background: var(--secondary);
+}
+
+/* thankyou.html */
+#thankies {
+    text-align: center;
+    grid-column: 2 / 3;
+    font-family: var(--normal-font);
+    font-size: larger;
+    border: var(--border);
+    /* background: var(--accent); */
+    margin: 3rem 1rem 20rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+#thankies span {
+    color: var(--secondary);
+    font-weight: 600;
+}
+/* ///////////// */
+
+/* hm */
+#nonprofit-box {
+    background: linear-gradient(
+        130deg,
+        #e4f6f4 20%,
+        #f7fffc 40%,
+        #e4f6f4 60%
+        );
+    /* linear gradient background is treated like a background 
+    image? from what i gathered it seems like the size has to 
+    have enough enough room for background position x to move 
+    outside? or i could be completely wrong.*/
+    background-size: 300%;
+    /* k the guy told me about background position x
+    now im just gonna move it on my own okie dokie */
+    background-position-x: -50%;
+    /* HAHA now to make it look nice */
+    animation: 10s shimmer 0.1s infinite;
+}
+#bronze-box {
+    background: linear-gradient(
+        130deg,
+        #edbeab 20%,
+        rgb(255, 224, 192) 40%,
+        #edbeab 60%
+        );
+
+    background-size: 300%;
+    background-position-x: -50%;
+    animation: 10s shimmer 0.8s infinite;
+}
+#silver-box {
+    background: linear-gradient(
+        130deg,
+        #dedfe3 20%,
+        #f9fdff 40%,
+        #dedfe3 60%
+        );
+
+    background-size: 300%;
+    background-position-x: -50%;
+    animation: 10s shimmer 1.2s infinite,
+}
+#gold-box {
+    background: linear-gradient(
+        130deg,
+        #ddb05ce0 20%,
+        #ffda75e0 40%,
+        #ddb05ce0 60%
+        );
+
+    background-size: 300%;
+    background-position-x: -50%;
+    animation: 10s shimmer 1.7s infinite;
+    /* close enough */
+}
+
+@keyframes shimmer {
+    0% {
+        background-position-x: 100%;
+    }
+    100% {
+        background-position-x: -50%;
+    }   
+}
+
+
+.perks-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.perks-box h2,
+.perks-box h3 {
+    font-family: var(--header-font);
+    text-align: center;
+}
+
+.perks-box > div {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    /* grid-template-columns: 30% 50px 1fr; */
+    /* background: var(--accent); */
+    /* border: var(--border); */
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.perks-box > div > * {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.perks-box button {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 120px;
+    justify-content: center;
+    transition: 0.1s ease-out;
+}
+.perks-box button:hover {
+    background: var(--secondary);
+}
+
+/* modal //////////////////////////////////////////////// */
+#perk-desc {
+    width: 80%;
+    height: 280px;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 400px;
+}
+
+#perk-desc > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#perk-desc span {
+    font-weight: 600;
+}
+
+#perk-desc button {
+    position: absolute;
+    top: 0;
+    right: 0.7rem;
+    padding: 0;
+    width: fit-content;
+    background: none;
+    color: var(--primary);
+    font-size: 45px;
+}
+
