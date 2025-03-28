@@ -475,7 +475,7 @@ textarea {
     border: 1px solid var(--primary);
     border-radius: 10px;
     margin: 5px;
-    font-family: var(--normal-font);
+    /* font-family: var(--normal-font); */
     font-size: 16px;
 }
 
@@ -553,7 +553,7 @@ input[type='submit']:focus {
 
     background-size: 300%;
     background-position-x: -50%;
-    animation: 10s shimmer 1.2s infinite,
+    animation: 10s shimmer 1.2s infinite;
 }
 #gold-box {
     background: linear-gradient(
