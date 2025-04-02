@@ -1,0 +1,47 @@
+body {
+    margin: 1rem 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #880015;
+}
+
+nav a {
+    margin: 1rem;
+    color: #880015;
+    font-family: 'Jersey 10';
+    font-size: larger;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #FFC90E;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Jersey 10';
+}
+
+h2 {
+    color: #880015;
+}
+
+p {
+    font-family: 'Geo';
+    font-size: 18px;
+}
+#primary {
+    background-color: #880015;
+    color: white;
+    padding: 1rem;
+    font-family: 'Jersey 10';
+}
+#secondary {
+    background-color: #FFC90E;
+    padding: 1rem;
+    font-family: 'Jersey 10';
+}
