@@ -660,6 +660,24 @@ Discover
 
 ////////////////////////////////////////////////////////////// */
 
+
+/* did i mess up making the site name h1 for everything? idk but i don't 
+care to restructure all that i got a project to work on */
+#fake-h1 {
+    display: grid;
+    font-size: 25px;
+    margin: 1rem;
+    font-weight: 600;
+}
+
+#fake-h1 span {
+    font-size: 20px;
+}
+
+.discover h1 {
+    font-family: var(--header-font);
+}
+
 .page-visits {
     display: flex;
     position: relative;

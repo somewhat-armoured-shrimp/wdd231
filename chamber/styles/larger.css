@@ -197,6 +197,10 @@
         grid-template-columns: 1fr 9fr 3fr 1fr;
     }
 
+    .discover h1 {
+        grid-column: 2 / 3;
+    }
+
     .page-visits {
         grid-column: 2 / 4;
     }
