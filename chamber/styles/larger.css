@@ -187,4 +187,25 @@
     #perk-desc > div {
         margin: 5%;
     }
+
+    /* //////////////////////////////////////////////////////////////
+    Discover
+    ////////////////////////////////////////////////////////////// */
+
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 9fr 3fr 1fr;
+    }
+
+    .page-visits {
+        grid-column: 2 / 4;
+    }
+
+    .figures {
+        grid-column: 2 / 3;
+    }
+    .figures figure {
+        box-shadow: 20px 8px 0 0 #f6f1ef6f;
+    }
+
 }

@@ -654,3 +654,86 @@ input[type='submit']:focus {
     font-size: 45px;
 }
 
+/* //////////////////////////////////////////////////////////////
+
+Discover
+
+////////////////////////////////////////////////////////////// */
+
+.page-visits {
+    display: flex;
+    position: relative;
+    background-color: var(--accent);
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    font-family: var(--normal-font);
+}
+
+#x-button {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.6rem;
+    font-size: x-large;
+}
+
+#x-button::before {
+    content: '×';
+}
+
+.closed.page-visits {
+    display: none;
+}
+
+.figures figure {
+    margin: 2rem 0.5rem;
+    border-radius: 15px;
+    border: var(--border);
+    font-family: var(--normal-font);
+    overflow: hidden;
+    /* OOOOHHHH AH HA*/
+
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "name"
+    "description"
+    "address"
+    "button";
+    /* i like this better */
+}
+.figures h2, 
+.figures p,
+.figures address {
+    padding: 0 0.6rem;
+}
+.figures img {
+    width: 100%;
+    height: auto;
+    grid-area: image;
+}
+.figures h2 {
+    font-family: var(--header-font);
+    border-bottom: var(--border);
+}
+.figures p {
+    margin-top: 0;
+    grid-area: description;
+}
+.figures address {
+    grid-area: address;
+}
+.figures button {
+    grid-area: button;
+    margin: 1rem;
+    padding: 1rem;
+    color: #fff;
+    width: 120px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    transition: 0.1s ease-out;
+}
+
+.figures button:hover {
+    background: var(--secondary);
+}

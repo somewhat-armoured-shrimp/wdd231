@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Cambridge Chamber of Commerce</title>
+    <meta name="description" content="Look at all the fun silly stuff you can do in the city of Cambridge, England">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script defer src="scripts/headfoot.js"></script>
+    <script src="scripts/discover.js" type="module"></script>
+    <meta property="og:title" content="Gaze upon this beautiful land and museums and the like">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://somewhat-armoured-shrimp.github.io/wdd231/chamber/images/cambridge-meta-pic.jpg">
+    <meta property="og:url" content="https://somewhat-armoured-shrimp.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="images/favicon(3).ico">
+</head>
+
+<body>
+    <header>
+        <div class="logo-h1">
+            <img src="images/cat.gif" alt="not a placeholder cat" width="80" height="80">
+            <h1>Cambridge <span>Chamber of Commerce</span></h1>
+        </div>
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="discover">
+        <div class="page-visits">
+            <p><span id="visits"></span></p>
+            <button id="x-button" aria-label="Close Banner"></button>
+        </div>
+        <div class="figures">
+
+        </div>
+    </main>
+    <footer>
+        <!-- copying wireframe thing for thing because why not -->
+        <div id="foot1">
+            <p>Cambridge Chamber of Commmerce</p>
+            <p>1 Innaminnutbrough Street</p>
+            <p>Cambridge</p>
+            <p>CB1 4AH</p>
+            <p>United Kingdom</p>
+            <p>cccambridge@yahoo.com</p>
+            <p>01223 999999</p>
+        </div>
+        <div id="foot2">
+            <p>WDD 231 Class Project</p>
+            <p>Sarah Toronto</p>
+            <p>©<span id="currentYear"></span> Cambridge Chamber of Commerce</p>
+            <p>Last modified - <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@media (min-width: 641px) {
+    .figures figure {
+        margin: 2rem 1rem;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image address"
+            "image button";
+        /* YOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+    }
+
+    .figures img {
+        border-bottom-right-radius: 10px;
+        width: 300px;
+        transition: 0.1s ease-in;
+    }
+    .figures img:hover {
+        opacity: 0.7;
+    }
+
+    .figures h2,
+    .figures p,
+    .figures address {
+        padding: 0 1rem;
+    }
+    
+}
