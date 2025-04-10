@@ -1,0 +1,32 @@
+{
+    "services": [
+        {
+            "name": "Bimblyville Courthouse",
+            "photo": "images/court.webp",
+            "address": "111 Hot Dog Rd, Bimblyville, AK 99653",
+            "phone": "(555) 111-1111",
+            "email": "bvcourthouse@email.com"
+        },
+        {
+            "name": "Bimblyville Community Center",
+            "photo": "images/NOTCOMPLETE.webp",
+            "address": "222 Hot Dog Rd, Bimblyville, AK 99653",
+            "phone": "(555) 222-2222",
+            "email": "bvcommunitycenter@email.com"
+        },
+        {
+            "name": "Bimblyville Relish Clinic",
+            "photo": "images/relish-clinic.webp",
+            "address": "333 Must Rd, Bimblyville, AK 99653",
+            "phone": "(555) 333-3333",
+            "email": "relishclinic@email.com"
+        },
+        {
+            "name": "Bimblyville Sheriff's Department",
+            "photo": "images/sheriff.webp",
+            "address": "444 Road St, Bimblyville, AK 99653",
+            "phone": "(555) 444-4444",
+            "email": "bvsheriffdept@email.com"
+        }
+    ]
+}
