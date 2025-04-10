@@ -9,7 +9,7 @@
         },
         {
             "name": "Bimblyville Community Center",
-            "photo": "images/butcher.webp",
+            "photo": "images/community.webp",
             "address": "222 Hot Dog Rd, Bimblyville, AK 99653",
             "phone": "(555) 222-2222",
             "email": "bvccenter@email.com"
@@ -27,6 +27,27 @@
             "address": "444 Road St, Bimblyville, AK 99653",
             "phone": "(555) 444-4444",
             "email": "bvsheriffdept@email.com"
+        },
+        {
+            "name": "Bimblyville Fire Department",
+            "photo": "images/fire.webp",
+            "address": "555 Bruh Rd, Bimblyville, AK 99653",
+            "phone": "(555) 555-5555",
+            "email": "bvfiredept@email.com"
+        },
+        {
+            "name": "Bimblyville High School",
+            "photo": "images/highschool.webp",
+            "address": "666 Road St, Bimblyville, AK 99653",
+            "phone": "(555) 666-6666",
+            "email": "bvhighschool@email.com"
+        },
+        {
+            "name": "Bimblyville Public Library",
+            "photo": "images/library.webp",
+            "address": "777 Reed Rd, Bimblyville, AK 99653",
+            "phone": "(555) 777-7777",
+            "email": "bvlibrary@email.com"
         }
     ]
 }
