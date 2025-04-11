@@ -100,6 +100,13 @@
             "address": "77 Steel Rd, Bimblyville, AK 99653",
             "phone": "(555) 777-7000",
             "email": "cloth4bods@email.com"
+        },
+        {
+            "name": "Jeffy's Cave",
+            "photo": "images/jeffy.webp",
+            "address": "Cave in woods, Bimblyville, AK 99653",
+            "phone": "(555) 888-8000",
+            "email": "wlbodth4s@email.com"
         }
     ]
 }
