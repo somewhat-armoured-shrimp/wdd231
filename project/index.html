@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Bimblyville</title>
+    <meta name="description" content="See how you can make yourself at home in the quaint town of Bimblyville.">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <script defer src="scripts/headfoot.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <meta property="og:title" content="Welcome to Bimblyville">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://somewhat-armoured-shrimp.github.io/wdd231/project/images/bimblyville.webp">
+    <meta property="og:url" content="https://somewhat-armoured-shrimp.github.io/wdd231/project/index.html">
+    <link rel="icon" href="images/favicon(4).ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-bimbly.webp" alt="bimblyville logo" width="100" height="100">
+        <!-- <span id="name">Our Bimblyville</span> -->
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <div class="hero">
+            <img src="images/bimblyville.webp"
+                alt="Bimblyville hero image. There's a guy and a horse next to the words 'Bimblyville, USA" width="553"
+                height="250">
+        </div>
+        <h1>Welcome to Our Bimblyville!</h1>
+        <div class="content">
+            <div>
+                <h2>Businesses and town things</h2>
+                <div class="content-div">
+                    <a href="places.html">
+                        <img src="images/fish.webp" alt="man holding fish" width="419" height="252" loading="lazy">
+                        <p>🏘️ Our lovely town</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h2>The Services</h2>
+                <div class="content-div">
+                    <a href="services.html">
+                        <img src="images/townhall.webp"
+                            alt="MS paint picture of a town hall."
+                            width="419" height="252" loading="lazy">
+                        <p>🏤 Contact our services</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h2>Stay in the Know</h2>
+                <div class="content-div">
+                    <a href="news.html">
+                        <img src="images/spy-birds.webp"
+                            alt="bird with evil camera lens for eye standing in front of caption saying 'DON'T LET THEM SEE' in all caps"
+                            width="419" height="252" loading="lazy">
+                        <p>📰 News of the week</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- api safety cushion -->
+        <div class="weather">
+            <h2>Weather</h2>
+            <div id="weatherness">
+                <h3>Bimblyville</h3>
+                <img src="#" alt="#" id="weather-icon">
+                <p id="current-temp"></p>
+                <p id="description"></p>
+                <p id="high"></p>
+                <p id="low"></p>
+                <p id="feels-like"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Bimblyville Town Hall</p>
+        <p>321 Glacial Prairie, Bimblyville, BV 90210</p>    
+        <p>(555) 123-4567</p>
+        <p>info@bimblyville.gov</p>
+    </footer>
+</body>
+
+</html>

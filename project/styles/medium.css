@@ -1,0 +1,94 @@
+@media (min-width: 600px) {
+    /* WE OUT HERE CUTTING MAD CORNERS LIKE A CYBERTRUCK MANUFACTURER */
+    /* YEAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+    .services, 
+    .places,
+    .news {
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+    }
+    .services h1,
+    .places h1,
+    .news h1 {
+        grid-column: 2 / 3;
+    }
+
+    #contact-cards,
+    #places-box,
+    #news-cards {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 2 / 3;
+    }
+
+    .contact-card {
+        display: flex;
+        width: 100%;
+        margin: 1rem auto;
+        min-height: 250px;
+        box-shadow: 0px 6px 20px 3px #b0b0b0;
+    }
+
+    .name-img h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+
+    }
+    .name-img img {
+        display: block;
+        min-width: 100px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-info address {
+        flex-wrap: wrap;
+    }
+
+    /* ////////////////////////////////////////////////////////////
+    NEWS
+    //////////////////////////////////////////////////////////// */
+
+    #news-h1 {
+        margin: 0;
+    }
+    #news-cards {
+        justify-content: center;
+    }
+    
+    .news-card {
+        max-width: 380px;
+        margin: 2rem 1rem;
+        box-shadow: 0px 6px 20px 3px #b0b0b0;
+    }
+
+    .news-card h2 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 70px;
+        align-items: center;
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: var(--primary);
+    }
+
+    #article {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        
+    }
+    #article p {
+        margin: 1rem auto;
+        max-width: 600px;
+    }
+
+    
+    
+
+}

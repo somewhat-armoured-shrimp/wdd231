@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | Our Bimblyville</title>
+    <meta name="description" content="Know what's happening around Bimblyville">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <script defer src="scripts/headfoot.js"></script>
+    <script type="module" src="scripts/news.js"></script>
+    <meta property="og:title" content="Welcome to Bimblyville">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://somewhat-armoured-shrimp.github.io/wdd231/project/images/bimblyville.webp">
+    <meta property="og:url" content="https://somewhat-armoured-shrimp.github.io/wdd231/project/news.html">
+    <link rel="icon" href="images/favicon(4).ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-bimbly.webp" alt="bimblyville logo" width="100" height="100">
+        <!-- <span id="name">Our Bimblyville</span> -->
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="news">
+        
+        <dialog id="signup-box">
+            <h2>Oop. You need to sign up to read this article, but it's free!</h2>
+            <form method="get" action="thanks.html">
+                <label>Email<input type="email" id="email" name="email" placeholder="placeholder@gmail.com"
+                        autocomplete="email" required></label>
+                <input type="submit" value="Sign Up">
+            </form>
+            <button id="close-button">×</button>
+        </dialog>
+
+        <article id="article">
+            <p id="article-p"></p>
+    
+        </article>
+        <h1 id="news-h1">News</h1>
+
+        <section id="news-cards">
+            <div class="news-card">
+                <a id="0" href="#0">
+                    <h2>Man Chased by Unknown Woodland Predator</h2>
+                    <img src="images/bunny-bear.webp" alt="man being chased down and licked by bunny-bear" width="419" height="252">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="1" href="#1">
+                    <h2>Bimblyville Mayoral Candidates Face Off in Debate</h2>
+                    <img src="images/debate.webp" alt="two mayoral candidates debating" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="2" href="#2">
+                    <h2>Man Drinks "Beer", Ends Up in Hospital</h2>
+                    <img src="images/hospital.webp" alt="MS pic of 'St Gurney's Hospital'" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="3" href="#3">
+                    <h2>WHAT is Going on With the Moon?</h2>
+                    <img src="images/moon.webp" alt="ms paint picture of moon" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="4" href="#4">
+                    <h2>Woman Charged With Attempted Murder After Plush Monkey Incident</h2>
+                    <img src="images/police.webp" alt="caution taped off area" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="5" href="#5">
+                    <h2>5 Things to Know About Cheebles</h2>
+                    <img src="images/cheebles.webp" alt="cheebles in the snow" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="6" href="#6">
+                    <h2>Dana McMandy SLAMS Mayor Hobbes Over "Ridiculous" Polar Bear Policy</h2>
+                    <img src="images/dana.webp" alt="dana mcmandy pic" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="7" href="#7">
+                    <h2>Jeffy - The Wererabbit From Outer Space</h2>
+                    <img src="images/jeffy.webp" alt="jeffy :3" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="8" href="#8">
+                    <h2>The Birds are Watching Us</h2>
+                    <img src="images/spy-birds.webp" alt="evil-looking bird with camera lens for eye" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+            <div class="news-card">
+                <a id="9" href="#9">
+                    <h2>Local Physicist Boasts About New Earth Models</h2>
+                    <img src="images/earths.webp" alt="earth shaped like a donut, a flat plane, and a humanoid" width="419" height="252" loading="lazy">
+                </a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Bimblyville Town Hall</p>
+        <p>321 Glacial Prairie, Bimblyville, BV 90210</p>
+        <p>(555) 123-4567</p>
+        <p>info@bimblyville.gov</p>
+    </footer>
+</body>
+
+</html>
